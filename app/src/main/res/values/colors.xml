@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#424242</color>
+    <color name="colorPrimaryO">#00424242</color>
+    <color name="colorPrimaryDark">#212121</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorButton">#3ea760</color>
+    <color name="orange">#FFA726</color>
+    <color name="btnPress">#a2daf5</color>
+    <color name="favorites">#299fda</color>
+    <color name="opacity">#00FFFFFF</color>
+    <color name="subtrip">#f4ecec</color>
+    <item name="gray_holo_dark" type="color">#ff464646</item>
+    <item name="gray_holo_light" type="color">#ffd0d0d0</item>
+</resources>

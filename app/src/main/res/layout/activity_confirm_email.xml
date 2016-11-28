@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/left_arrow" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1.4"
+        android:gravity="left"
+        android:text="@string/tv_email_confirm"
+        android:textColor="@color/common_signin_btn_dark_text_focused"
+        android:textSize="19dp" />
+
+    <EditText
+        android:id="@+id/edConfirmEmail"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1.2"
+        android:background="@drawable/border"
+        android:drawableLeft="@drawable/email"
+        android:drawablePadding="10dp"
+        android:hint="@string/hint_email"
+        android:paddingLeft="20dp"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/btnConfirmEmail"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1.2"
+        android:background="@color/colorButton"
+        android:text="@string/confirm_email"
+        android:textAllCaps="false"
+        android:textColor="@color/common_signin_btn_dark_text_focused" />
+
+</LinearLayout>

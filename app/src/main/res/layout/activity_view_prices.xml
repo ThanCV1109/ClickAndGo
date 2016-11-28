@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/common_signin_btn_dark_text_focused"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/arrowhead" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:text="My trip"
+        android:textColor="@color/favorites" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="0.8dp"
+            android:layout_toLeftOf="@+id/imgInterface"
+            android:background="#3b3131" />
+
+        <ImageView
+            android:id="@+id/imgInterface"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="1dp"
+            android:src="@drawable/arrow_down" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="0.8dp"
+            android:layout_toRightOf="@+id/imgInterface"
+            android:background="#3b3131" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/buttons_favorites"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_weight="0.8"
+        android:background="@drawable/boder_mytrip"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_myself"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_btn_left"
+            android:text="Myself"
+            android:textAllCaps="false"
+            android:textColor="@drawable/selector_buttons_text" />
+
+        <Button
+            android:id="@+id/btn_otherpassenger"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_btn_right"
+            android:text="Other passenger"
+            android:textAllCaps="false"
+            android:textColor="@drawable/selector_buttons_text" />
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/fragment_holder3"
+        class="vn.techplus.clickandgo.fragment.viewprices.FragmentViewPricesHolder"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="7" />
+
+</LinearLayout>

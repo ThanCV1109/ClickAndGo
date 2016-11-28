@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item
+            android:id="@+id/nav_book"
+            android:icon="@drawable/book_icon"
+            android:title="Book"
+            />
+        <item
+            android:id="@+id/nav_my_trip"
+            android:icon="@drawable/mytrip"
+            android:title="My Trips" />
+        <item
+            android:id="@+id/nav_credit_card"
+            android:icon="@drawable/creditcard"
+            android:title="My Credit Cards" />
+        <item
+            android:id="@+id/nav_favorite"
+            android:icon="@drawable/ic_favorite"
+            android:title="My Favorites" />
+
+</menu>
